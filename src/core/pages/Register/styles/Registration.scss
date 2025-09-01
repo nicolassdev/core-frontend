@@ -1,0 +1,70 @@
+.core-registration {
+  @media (width < 768px) {
+    padding: 16px;
+  }
+
+  .form-container {
+    width: 456px;
+
+    @media (width < 768px) {
+      width: 100%;
+    }
+  }
+
+  .sms-input {
+    height: 6rem;
+    max-width: 55px;
+  }
+
+  .mobile-height {
+    @media (width < 768px) {
+      height: calc(100vh - 130px)
+    }
+  }
+
+  .field-required {
+    /* Add asterisk after the label */
+    &::after {
+      content: "*";
+      color: #cd3545;
+      margin-left: 4px;
+    }
+  }
+
+  .digit-input {
+    max-width: 60px;
+    height: 90px;
+    font-size: 60px;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .border-red {
+    border: 1px solid red;
+  }
+
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+
+  .row1 {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.border-no-border {
+  border: 1px solid;
+  border-color: white;
+}

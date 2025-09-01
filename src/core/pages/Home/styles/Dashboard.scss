@@ -1,0 +1,350 @@
+@import './../../../css/core.variables.scss';
+.core-index {
+	.text-h1 {
+		line-height: 4rem !important;
+	}
+	.see-all {
+		button {
+			border: none !important;
+		}
+	}
+	.system-button {
+		background: #ffbf67;
+	}
+	.app-column {
+		width: 19.6667% !important;
+	}
+	.quicklinks {
+		.biometrics-section,
+		.ip-section {
+			width: 30.3333%;
+		}
+		.customer-support-section {
+			width: 38.3333%;
+		}
+	}
+	.apps {
+		.apps-row {
+			.col-md-2 {
+				width: 19.6667%;
+			}
+		}
+	}
+	.q-hoverable:hover {
+		.q-focus-helper {
+			opacity: 0 !important;
+		}
+	}
+	.quicklinks {
+		.text-12 {
+			font-family: $roboto !important;
+		}
+		.links-buttons {
+			.btn-wrapper {
+				button {
+					width: 156px;
+					height: 38px;
+					@media screen and (min-width: 1365px) and (max-width: 1851px) {
+						width: 150px;
+					}
+				}
+			}
+		}
+	}
+	.caption {
+		padding: 10px 0px;
+	}
+
+	.see-all {
+		button {
+			padding: 0px;
+			margin: 0px;
+			.q-ripple {
+				display: none !important;
+			}
+		}
+		.bg-hover-violet-1:hover {
+			color: $secondary !important;
+			background-color: $offwhite !important;
+		}
+	}
+	.whats-new {
+		.posts-btn::-webkit-scrollbar {
+			display: none;
+		}
+		.posts-btn-wrapper {
+			.posts-btn {
+				width: calc(100vw - 184px);
+				white-space: nowrap;
+				overflow-x: scroll;
+				overflow-y: hidden;
+				vertical-align:middle;
+				
+				.posts {
+					display: inline-block;
+					white-space: normal;
+					text-align: center;
+				}
+			}
+		}
+	}
+	.alarmTab {
+		width: 100%;
+		max-height: 500px;
+		height: 500px;
+	}
+  
+}
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+	.tablet-header {
+		display: none;
+	}
+	.apps-row {
+		.col-md-2 {
+			width: 24.6667% !important;
+		}
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+	.tablet-header {
+		display: none;
+	}
+	.apps-row {
+		.col-md-2 {
+			width: 24.6667% !important;
+		}
+	}
+	.biometrics-section,
+	.ip-section {
+		width: 29.3333% !important;
+	}
+	.customer-support-section {
+		width: 40.3333% !important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.apps {
+		.apps-row {
+			.col-md-2 {
+				width: 32.6667% !important;
+			}
+			.tablet-header {
+				.text-18 {
+					font-size: 18px;
+				}
+				.text-11 {
+					padding-top: 2px;
+					font-size: 11px;
+				}
+			}
+			.header {
+				display: none;
+			}
+		}
+	}
+	.quicklinks {
+		.biometrics-section,
+		.ip-section {
+			width: 50% !important;
+		}
+		.customer-support-section {
+			width: 100% !important;
+		}
+	}
+	.whats-new {
+		.posts-btn-wrapper {
+			.posts-btn {
+				width: calc(100vw - 109px) !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.tablet-header {
+		display: none;
+	}
+	.system-description {
+		margin-top: 0;
+		font-size: 18px;
+		@media screen and (max-width: 450px) {
+			font-size: 12px;
+		}
+	}
+	.system-button {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		@media screen and (max-width: 500px) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.system-icon {
+			width: 50%;
+		}
+	}
+	.apps {
+		padding-right: 24px;
+		.app-column {
+			width: 40.6667% !important;
+		@media screen and (max-width: 375px) {
+			width: 44.6667% !important;
+		}
+		}
+		.app-column:nth-child(odd) {
+			margin-left: 18%;
+			@media screen and (max-width: 375px) {
+				margin-left: 10%;
+			}
+		}
+		.q-mr-lg { 
+			margin-right: 0px !important;
+			button {
+				h5 {
+					font-size: 22px;
+					text-align: center;
+					@media screen and (max-width: 450px) {
+						font-size: 15px;
+					}
+				}
+				.q-avatar {
+					width: 40px;
+					height: 40px;
+					@media screen and (max-width: 450px) {
+						width: 28px;
+						height: 28px;
+					}
+				}
+			}
+		}
+	}
+	.quicklinks {
+		padding-top: 20px;
+		padding-left: 28px;
+		margin-top: -90px;
+		background: $violet-2 !important;
+		@media screen and (max-width: 450px) {
+			margin-top: -90px;
+		}
+		.text-18 {
+			font-size: 15px;
+		}
+		.biometrics-section,
+		.ip-section {
+			width: 100% !important;
+			padding-top: 0;
+			.links-buttons {
+				margin-right: auto;
+				.btn-wrapper {
+					width: 50%;
+					button {
+						width: 100%;
+						border-radius: 12px;
+						height: 48px;
+						background: $offwhite !important;
+						border: none !important;
+						&:hover {
+							color: $secondary !important;
+						}
+					}
+				}
+			}
+		}
+		.customer-support-section {
+			padding-top: 0;
+			.links-buttons {
+				margin-right: auto;
+				.btn-wrapper {
+					display: flex;
+					width: 33%;
+					button {
+						width: 100%;
+						border-radius: 12px;
+						height: 48px;
+						background: $offwhite !important;
+						border: none !important;
+						&:hover {
+							color: $secondary !important;
+						}
+					}
+				}
+			}
+		}
+		.biometric-buttons,
+		.ip-buttons {
+			width: 95% !important;
+		}
+		.customer-support-section {
+			width: 100% !important;
+		}
+		.customer-support-buttons {
+			width: 100% !important;
+		}
+		.btn-wrapper {
+			.biometric-buttons, .ip-buttons, .customer-support-buttons {
+				background: $offwhite;
+				@media screen and (max-width: 300px) {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+	.whats-new {
+		.posts-btn-wrapper {
+			.posts-btn {
+				border: 1px solid black;
+				background: $offwhite;
+				height: 24px;
+				width: calc(100vw - 48px) !important;
+				.posts {
+					border-left: 1px solid black;
+					height: 24px;
+					.default-btn {
+						padding: 2px 24px;
+						background: $violet-2;
+						padding-top: 0;
+						color: white;
+					}
+					.system-btn {
+						padding-left: 24px;
+						padding-right: 24px;
+						color: black;
+					}
+				}
+			}
+		}
+	}
+}
+.core-dark-mode {
+	.core-index {
+		.quicklinks {
+			@media screen and (max-width: 767px) {
+				background: $violet-6;
+			}
+		}
+		.whats-new {
+			@media screen and (max-width: 767px) {
+				background: $secondary !important;
+			}
+		}
+		.btn-wrapper {
+			@media screen and (max-width: 767px) {
+				.core-text-secondary {
+					color: $secondary !important;
+				}
+			}
+		}
+		.q-infinite-scroll__loading {
+			.text-primary {
+				color: $white !important;
+			}
+		}
+		.see-all {
+			.core-text-secondary {
+				color: $violet-1 !important;
+			}
+			.bg-hover-violet-1:hover {
+				background-color: unset !important;
+			}
+		}
+	}
+}

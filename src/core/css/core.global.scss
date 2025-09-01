@@ -1,0 +1,661 @@
+/**
+  Core global styles
+
+  To avoid redundant styling all classes that can be use
+  globally will be declared here.
+*/
+
+// Core menu styling
+.core-menu {
+	&.side {
+		@media screen and (max-width: 767px) {
+			// 767
+			display: none;
+		}
+		@media screen and (min-width: $breakpoint-sm-min) {
+			// 768
+			background: transparent;
+		}
+		@media screen and (min-width: $breakpoint-sm-max) {
+			// 1023
+			padding: 20px;
+		}
+		.content {
+			.title {
+				@media screen and (min-width: $breakpoint-sm-min) {
+					// 768
+					padding: 30px 0 20px 0;
+				}
+				@media screen and (min-width: $breakpoint-sm-max) {
+					// 1023
+					padding: 10px 0 20px 0;
+				}
+			}
+			.subtitle {
+				div {
+					cursor: pointer;
+					@media screen and (min-width: $breakpoint-sm-min) {
+						// 768
+						padding-bottom: 10px;
+						display: inline-block;
+						margin-right: 10px;
+					}
+					@media screen and (min-width: $breakpoint-sm-max) {
+						// 1023
+						padding-bottom: 15px;
+						display: block;
+					}
+
+					&:hover {
+						transition: 0.2s ease-out;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+
+	&.main {
+		@media screen and (min-width: $breakpoint-sm-min) {
+			// 768
+      padding: 20px;
+			margin-top: 15px;
+		}
+		@media screen and (min-width: $breakpoint-sm-max) {
+			// 1023
+			margin-top: 0;
+			margin-left: 15px;
+		}
+		.title {
+			padding-top: 7px;
+			@media screen and (max-width: 767px) {
+				// 768
+				text-align: center;
+			}
+		}
+	}
+
+	&.side,
+	&.main {
+		border-radius: 15px;
+		@media screen and (min-width: $breakpoint-sm-min) {
+			// 768
+			border-radius: 15px 15px 0 0;
+		}
+	}
+}
+
+// Core select field
+.core-select-field {
+	.q-field__label {
+		margin-left: 15px;
+		color: $secondary;
+		transform: none !important;
+	}
+	.q-field__control-container {
+		padding-top: 0 !important;
+	}
+	span {
+		margin-left: 15px;
+	}
+	.q-select__dropdown-icon {
+		margin-right: 10px;
+		color: $accent-3;
+	}
+  &.height-31 {
+    height: 31px;
+    .q-field__marginal, .q-field__control, .q-field__native {
+      height: 31px;
+      min-height: 31px;
+    }
+    .q-field__label {
+      top: 5px;
+    }
+  }
+  &.min-width-90 {
+    min-width: 90px;
+    .q-field__label, span {
+      padding-left: 20px;
+    }
+    .q-field__append {
+      padding-left: 0;
+    }
+  }
+  &.use-input {
+    .q-field__input {
+      padding-left: 15px;
+    }
+    ::placeholder {
+      opacity: 1;
+    }
+  }
+}
+.q-select__dialog {
+	@media screen and (max-width: $breakpoint-xs-max) {
+		background: transparent;
+		.q-field__inner {
+			display: none;
+		}
+	}
+}
+.option-style-dark,
+.option-style-light {
+  .q-item--active {
+    color: inherit;
+  }
+	@media screen and (min-width: $breakpoint-sm-min) {
+		margin-top: 10px !important;
+	}
+	border-radius: 10px;
+	border: 1px solid $violet-2;
+
+  .q-item {
+    min-height: 35px;
+  }
+
+  &.max-width-130 {
+    max-width: 130px;
+    @media screen and (min-width: $breakpoint-lg-max) {
+      max-width: 190px;
+    }
+  }
+}
+.option-style-dark {
+	background-color: $accent-0 !important;
+	color: $white;
+}
+.option-style-light {
+	background-color: $offwhite !important;
+	color: $secondary;
+}
+.selected-class {
+	color: $white;
+	background-color: $accent-0;
+}
+
+// Core input field
+.core-input-field {
+	&.label-accent-2 {
+		.q-field__label {
+			color: $accent-2 !important;
+		}
+    .q-field__native {
+			color: $accent-2 !important;
+		}
+	}
+  .q-field__bottom {
+		min-height: auto !important;
+		padding: 0 !important;
+	}
+	.q-field__label {
+		color: $white;
+		transform: none !important;
+		font-size: 10px;
+		@media screen and (min-width: $breakpoint-lg-max) {
+			// 1919
+			font-size: 14px;
+		}
+		@media screen and (min-width: $breakpoint-xl-max) {
+			// 5120
+			font-size: 18px;
+		}
+	}
+	::placeholder {
+		opacity: 1;
+	}
+	.q-field__control {
+		padding: 0 15px 15px;
+	}
+	&.textarea {
+		.q-field__control-container {
+			padding-top: 17px !important;
+		}
+	}
+}
+
+/**
+  Button and q-menu style
+*/
+.q-btn {
+  &.height-38 {
+    height: 38px;
+  }
+}
+.core-q-menu {
+  color: $white;
+  background: $accent-0;
+
+  .q-item {
+    min-height: 35px;
+  }
+}
+
+
+
+/*
+* Table Style
+*/
+.core-table {
+	.q-table__top,
+	thead tr:first-child th {
+		background-color: $violet-7;
+		color: $white;
+		font-weight: 600;
+		font-size: 14px;
+		height: 56px !important;
+	}
+	tbody tr td {
+		color: $accent-2;
+		font-size: 14px;
+		height: 40px !important;
+		button {
+			border: none;
+			background: none;
+			color: $accent-2;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+	.q-table__bottom {
+		display: none;
+	}
+
+	thead {
+		.q-checkbox {
+			.q-checkbox__inner {
+				color: $violet-2 !important;
+			}
+		}
+	}
+
+	tbody {
+		.q-checkbox {
+			.q-checkbox__inner {
+				color: $violet-0 !important;
+			}
+		}
+	}
+
+	tr:nth-child(even) {
+		background-color: $accent-4;
+	}
+
+  tr {
+    cursor: pointer;
+    .table-menu {
+      width: 30px;
+      .q-btn {
+        transition: .3s ease-out;
+        opacity: 0;
+        // display: none;
+        &.active {
+          background-color: red !important;
+        }
+      }
+    }
+    &:hover {
+      .table-menu {
+        .q-btn {
+          opacity: 1;
+          // display: block;
+        }
+      }
+    }
+
+  }
+}
+
+/*
+* Pagination Style
+*/
+.paginationContainer {
+	position: relative;
+	width: 132px;
+	height: 31px;
+	border: 1px solid $violet-2;
+	border-radius: 19px;
+	.pagination {
+		button:first-of-type {
+			position: absolute;
+			left: 4px;
+			top: 50%;
+			transform: translateY(-50%);
+			border: 1px solid $violet-2;
+			border-radius: 100%;
+		}
+		button:last-of-type {
+			position: absolute;
+			right: 4px;
+			top: 50%;
+			transform: translateY(-50%);
+			border: 1px solid $violet-2;
+			border-radius: 100%;
+		}
+		button:last-of-type,
+		button:first-of-type {
+			width: 25px;
+		}
+
+		.justify-center {
+			button {
+				display: none;
+			}
+		}
+	}
+	.core-pagination-select-input {
+		position: absolute;
+		left: 53%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		.q-field__control {
+			font-size: 15px;
+			color: $secondary;
+			padding: 0px;
+			&::before,
+			&::after {
+				border: unset;
+			}
+		}
+    .q-field__append {
+      display: none;
+    }
+	}
+}
+
+.core-dark-mode {
+  .paginationContainer {
+    .core-pagination-select-input {
+      span {
+        color: $white;
+      }
+      .q-field__control {
+        color: $white;
+      }
+    }
+  }
+}
+
+//pagination select
+.select-pagination-light,
+.select-pagination-dark {
+	min-width: 70px !important;
+	margin-left: -10px !important;
+	border: 1px solid $violet-2;
+	border-radius: 10px;
+	.q-item {
+		min-height: 10px;
+		font-size: 13px;
+		padding: 0.61vw 11px;
+	}
+}
+
+.select-pagination-dark {
+	background-color: $accent-0 !important;
+	color: $white;
+	.q-item--active {
+		color: $white !important;
+	}
+}
+.select-pagination-light {
+	background-color: $offwhite !important;
+	color: $secondary;
+}
+
+/*
+* Toggle button style
+*/
+.core-toggle {
+  .q-toggle__inner {
+    border: 1px solid $accent-5;
+    min-width: 35.66px;
+    height: 21.79px;
+    width: 35.66px;
+    border-radius: 11px;
+    padding: 3.1px 3.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .q-toggle__track {
+    margin-top: 0;
+    height: 15.56px;
+    width: 100%;
+    margin-left: 0;
+    opacity: 1 !important;
+    background: rgba(66, 76, 100, 0.5);
+    border-radius: 11px;
+  }
+  .q-toggle__thumb {
+    height: 13px;
+    width: 13px;
+    top: 50%;
+    margin-top: 0;
+    transform: translateY(-50%);
+    left: 5px;
+    &::after {
+      box-shadow: none;
+      background: $accent-6;
+    }
+    &::before {
+      opacity: 0 !important;
+    }
+  }
+  .q-toggle__inner--truthy {
+    .q-toggle__thumb {
+      left: 15.7px !important;
+    }
+    .q-toggle__track {
+      background: rgba(124, 77, 255, 0.5);
+    }
+  }
+  .q-toggle__inner--indet .q-toggle__thumb {
+    left: 5px;
+  }
+
+  .q-toggle__label {
+    padding-left: 20px;
+  }
+}
+//end toggle button
+
+
+/**
+* Core Loading Spinner
+*/
+.core-dot-spin {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: transparent;
+  box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), 0 18px 0 0 rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), -18px 0 0 0 rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 rgba(152, 128, 255, 0);
+  animation: dotSpin 1.5s infinite linear;
+}
+
+@keyframes dotSpin {
+  0%,
+  100% {
+    box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  12.5% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 0 #9880ff, 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  25% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 0 #9880ff, 0 18px 0 0 #9880ff, -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  37.5% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 0 #9880ff, 0 18px 0 0 #9880ff, -12.72984px 12.72984px 0 0 #9880ff, -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  50% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 0 #9880ff, -12.72984px 12.72984px 0 0 #9880ff, -18px 0 0 0 #9880ff, -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  62.5% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 #9880ff, -18px 0 0 0 #9880ff, -12.72984px -12.72984px 0 0 #9880ff;
+  }
+  75% {
+    box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 0 #9880ff, -12.72984px -12.72984px 0 0 #9880ff;
+  }
+  87.5% {
+    box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 #9880ff;
+  }
+}
+
+//modal dialog pop-up
+.dialogContainer {
+	.dialogContent {
+		.q-field__native {
+			color: $white;
+		}
+		.q-focus-helper {
+			opacity: 0 !important;
+		}
+		@media screen and (max-width: 767px) {
+			.q-field__control-container,
+			.q-field__inner {
+				height: 31px !important;
+			}
+		}
+	}
+}
+
+/**
+Customed scroll bar position for core wrapper.
+*/
+.main-scroll {
+	.q-scrollarea__bar,
+	.q-scrollarea__thumb {
+		@media screen and (min-width: $breakpoint-sm-max) {
+			right: 15px !important;
+		}
+	}
+}
+
+//ip management
+.core-ip-management {
+	.mobile-view {
+		button {
+			i {
+				font-size: 34.4px;
+				margin-left: 17.7px !important;
+			}
+		}
+	}
+} //end ipmanagement
+
+// Dark mode style for select and input field
+.core-dark-mode {
+	.core-select-field {
+		span {
+			color: $white;
+		}
+		.q-field__label {
+			color: $white;
+		}
+    &.use-input {
+      .q-field__input {
+        color: $white;
+
+      }
+    }
+	}
+	.core-input-field {
+		.q-field__native {
+			color: $white;
+		}
+	}
+
+	.core-ip-management {
+		.q-field__control {
+			.q-field__native {
+				color: $white !important;
+			}
+		}
+	}
+
+	.core-table {
+		tr:nth-child(even) {
+			background-color: $accent-1;
+		}
+		tr:nth-child(odd) {
+			background-color: $accent-0;
+		}
+	}
+
+	//pagination
+	.paginationContainer {
+		.pagination {
+			button {
+				color: $white !important;
+			}
+		}
+	}
+}
+
+/**
+  Core dialog
+*/
+.core-dialog-background {
+	background: url('src/core/assets/dialog-background.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	backdrop-filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.7);
+
+	.core-dialog-container {
+		width: 100%;
+		height: 400px;
+		background: url('src/core/assets/dialog-container.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 314px;
+		max-width: 100% !important;
+
+		@media screen and (min-width: 768px) {
+			width: 700px;
+			height: 780px;
+			background-size: 700px;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 500px;
+			height: 500px;
+			background-size: 450px;
+		}
+		@media screen and (min-width: 1919px) {
+			width: 800px;
+			height: 800px;
+			background-size: 700px;
+		}
+
+		.text-32 {
+			font-size: 20px;
+			@media screen and (min-width: 768px) {
+				font-size: 32px;
+			}
+			@media screen and (min-width: 1024px) and (max-width: 1919px) {
+				font-size: 25px;
+			}
+		}
+
+		.text-24 {
+			font-size: 13px;
+			@media screen and (min-width: 768px) {
+				font-size: 24px;
+			}
+			@media screen and (min-width: 1024px) and (max-width: 1919px) {
+				font-size: 18px;
+			}
+		}
+		.width-300 {
+			width: 200px;
+			@media screen and (min-width: 768px) {
+				width: 300px;
+			}
+			@media screen and (min-width: 1024px) and (max-width: 1919px) {
+				width: 250px;
+			}
+		}
+	}
+}

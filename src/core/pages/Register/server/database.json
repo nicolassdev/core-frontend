@@ -1,0 +1,54 @@
+{
+	"tbl_personal_account": [
+		{
+			"id": 1,
+			"last_name": "",
+			"first_name": "",
+			"middle_name": "",
+			"suffix_name": "",
+			"email": "",
+			"contact_number": "",
+			"preffered_verification_method": "",
+			"birthdate": "",
+			"country": "",
+			"province_state": "",
+			"municipality_city": "",
+			"barangay_district": "",
+			"postal_zip_code": "",
+			"unit_room_floor_number": "",
+			"building_name": "",
+			"lot_block_phase_house_number": "",
+			"street_name": "",
+			"subdivision_residence_complex": "",
+			"gender": "",
+			"special_status": "",
+			"id_number": "",
+			"username": "admin",
+			"password": "admin"
+		}
+	],
+	"tbl_organizational_account": [
+		{
+			"id": 1,
+			"organization_name": "",
+			"email": "",
+			"contact_persons_name": "",
+			"contact_number": "",
+			"preffered_verification_method": "",
+			"country": "",
+			"province_state": "",
+			"municipality_city": "",
+			"barangay_district": "",
+			"postal_zip_code": "",
+			"unit_room_floor_number": "",
+			"building_name": "",
+			"lot_block_phase_house_number": "",
+			"subdivision_residence_complex": "",
+			"street_name": "",
+			"industry": "",
+			"other_relevant_details": "",
+			"username": "admin123",
+			"password": "admin123"
+		}
+	]
+}

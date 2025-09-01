@@ -1,0 +1,84 @@
+stages:
+#  - test
+  - build
+  - deploy-stable-local
+  - pre-cleanup
+  - post-cleanup
+
+#run-unit-tests:
+#  stage: test
+#  variables:
+#    GIT_STRATEGY: none
+#  script:
+#    - cd core-frontend
+#    - npm run test:unit:coverage
+#  tags:
+#    - pixel8
+
+build-application:
+  stage: build
+  script:
+    - npm install
+    - quasar build
+  tags:
+    - pixel8
+
+deploy-stable-build-local:
+  stage: deploy-stable-local
+  # variables:
+  #   GIT_STRATEGY: none
+  script:
+    - |
+        ((Get-Content -Path $env:CI_PROJECT_DIR/src/resources/bootstrap.js -Raw) -replace "// START IMPORT BOOTSTRAP","// START IMPORT BOOTSTRAP`r`nimport JuanHR from './JuanHR/bootstrap';import ProjectManagement from './ProjectManagement/bootstrap';import DocumentTracking from './DocumentTracking/bootstrap';") |
+          Set-Content -Path $env:CI_PROJECT_DIR/src/resources/bootstrap.js
+    - |
+        ((Get-Content -Path $env:CI_PROJECT_DIR/src/resources/bootstrap.js -Raw) -replace "routes \= \[","routes = [`r`n...JuanHR.routes,...ProjectManagement.routes,...DocumentTracking.routes,") |
+          Set-Content -Path $env:CI_PROJECT_DIR/src/resources/bootstrap.js
+    - |
+        ((Get-Content -Path $env:CI_PROJECT_DIR/src/resources/bootstrap.js -Raw) -replace "store \= \{","store = {`r`n...JuanHR.store,...ProjectManagement.store,") |
+          Set-Content -Path $env:CI_PROJECT_DIR/src/resources/bootstrap.js
+    - |
+        Add-Content $env:CI_PROJECT_DIR/src/resources/bootstrap.scss "@import `"./JuanHR/css/juanhr.variables`";@import `"./ProjectManagement/css/pm`";@import `"./DocumentTracking/css/dt`";"
+    - |
+        ((Get-Content -Path $env:CI_PROJECT_DIR/quasar.conf.js -Raw) -replace "// publicPath: '',","publicPath: 'https://45.124.56.166/erp',") |
+          Set-Content -Path $env:CI_PROJECT_DIR/quasar.conf.js
+    - |
+        ((Get-Content -Path $env:CI_PROJECT_DIR/src/boot/axios.js -Raw) -replace "baseURL: '.*?'","baseURL: 'https://45.124.56.166/erp-api'") |
+          Set-Content -Path $env:CI_PROJECT_DIR/src/boot/axios.js
+    - Get-ChildItem -Path $env:CI_PROJECT_DIR | Copy-Item -Destination D:/gitlab-runner/erp-stable-builds/frontend -Recurse -Force
+    - cd D:/gitlab-runner/erp-stable-builds/frontend
+    - npm install
+    - quasar build -d
+    - winscp /console /passive=on /command "open ftp://${ERP_SERVER_FTP_USERNAME}:${ERP_SERVER_FTP_PASSWORD}@${ERP_SERVER_FTP_HOST}:21" "synchronize remote -delete D:\gitlab-runner\erp-stable-builds\frontend\dist\spa /home/pixel8/public_html/erp" "exit"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "core-stable"'
+  tags:
+    - pixel8
+
+# build-staging-application-cloud:
+#   stage: build-staging-cloud
+#   variables:
+#     GIT_STRATEGY: none
+#   script:
+#     - |
+#         ((Get-Content -Path $env:CI_PROJECT_DIR/core-frontend/quasar.conf.js -Raw) -replace "publicPath: 'http://192.168.0.254/juanhr-frontend',","") | Set-Content -Path $env:CI_PROJECT_DIR/core-frontend/quasar.conf.js
+#     - |
+#         ((Get-Content -Path $env:CI_PROJECT_DIR/core-frontend/src/boot/axios.js -Raw) -replace "baseURL: '.*?'","baseURL: 'http://api.stg-jhrv2.pixel8.ph/'") | Set-Content -Path $env:CI_PROJECT_DIR/core-frontend/src/boot/axios.js
+#     - cd core-frontend
+#     - quasar build -d
+#   rules:
+#     - if: '$CI_COMMIT_BRANCH == "core-juanhr-staging"'
+#   tags:
+#     - pixel8
+
+# deploy-staging-build-cloud:
+#   stage: deploy-staging-cloud
+#   variables:
+#     GIT_STRATEGY: none
+#   script:
+#     - winscp /console /passive=on /command "open ftp://${STG_FTP_USERNAME}:${STG_FTP_PASSWORD}@${STG_FTP_HOST}:21" "put $env:CI_PROJECT_DIR\core-frontend\dist\spa\* /" "exit"
+# #    - lftp -c "set ssl:verify-certificate false; open -u $STG_FTP_USERNAME,$STG_FTP_PASSWORD $STG_FTP_HOST; mirror -Rv ./core-frontend/dist/spa ./"
+#   rules:
+#     - if: '$CI_COMMIT_BRANCH == "core-juanhr-staging"'
+#   tags:
+#     - pixel8

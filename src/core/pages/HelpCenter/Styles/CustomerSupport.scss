@@ -1,0 +1,18 @@
+@import '../../../css/core.variables.scss';
+.customer-support {
+  .line-height-15 {
+    line-height: 15px;
+  }
+  .q-field__bottom {
+    min-height: auto !important;
+    padding: 0 !important
+  }
+}
+.core-light-mode {
+  .core-bg-secondary {
+    background-color: #F5F5F5 !important;
+  }
+  .core-bg-white {
+    background-color: $white;
+  }
+}

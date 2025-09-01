@@ -1,0 +1,131 @@
+@import '../../../../../css/core.variables.scss';
+
+/*
+* Scroll Class
+*/
+.core-scroll-panel-height {
+	height: calc(100vh - 116px) !important;
+}
+
+.title {
+	padding-bottom: 10px;
+}
+.text-16 {
+	font-size: 16px;
+	margin: 0px;
+}
+
+.core-ip-management {
+	@media screen and (max-width: 767px) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.ip-buttons {
+		button {
+			width: 120px;
+		}
+	}
+}
+
+.mobile-view {
+	.header-btn-container {
+		button {
+			color: $accent-7;
+			font-size: 12px;
+			i {
+				font-size: 34.4px;
+			}
+		}
+		.active-btn {
+			border: 1px solid $violet-1;
+			color: $violet-8 !important;
+		}
+	}
+
+	.mobile-ip-buttons {
+		button {
+			width: 80%;
+			height: 39px;
+			color: $violet-0;
+			.q-btn__content {
+				i {
+					position: absolute;
+					left: 25.4px;
+					font-size: 23.4px;
+				}
+			}
+		}
+	}
+
+	.scroll-mobile {
+		height: calc(100vh - 225.3px);
+	}
+	.scroll-mobile-list-4 {
+		height: 309px !important;
+	}
+
+	.ip-container {
+		.list-ips {
+			padding-bottom: 20px;
+			padding-top: 20px;
+			position: relative;
+			.avatar-icon {
+				min-width: 47px !important;
+			}
+			.icons {
+				color: $red-1;
+				background: rgba($violet-8, 24%);
+				border-radius: 12px;
+			}
+			.check {
+				color: $violet-1 !important;
+			}
+			.duration {
+				margin-top: -1px;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				width: 80%;
+				left: 50%;
+				height: 1px;
+				background: rgba(#5b6681, 24%);
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
+
+.togglesBtn {
+	.toggleWhite {
+		@media screen and (min-width: 768px) and (max-width: 1024px) {
+			padding-top: 8px;
+			padding-left: 0px !important;
+		}
+	}
+}
+
+.core-dark-mode {
+	.core-text-secondary {
+		color: $white !important;
+	}
+	.mobile-view {
+		.header-btn-container {
+			button {
+				color: $white !important;
+				background: $accent-0 !important;
+				i {
+					color: $violet-3 !important;
+				}
+			}
+		}
+
+		.ip-container {
+			button {
+				background: $violet-1 !important;
+			}
+		}
+	}
+}

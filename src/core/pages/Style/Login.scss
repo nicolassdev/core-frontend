@@ -1,0 +1,26 @@
+@import '../../css/core.variables.scss';
+.core-login {
+	background: url('../assets/core-quasar-bg.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	.border-bottom-red {
+		border-bottom: 1px solid red;
+	}
+	.border-bottom-white {
+		border-bottom: 1px solid $accent-3;
+	}
+	.border-primary {
+		border: 1px solid $primary;
+	}
+	.core-quasar {
+		background: url('../assets/core-quasar.svg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 35vw;
+		width: 50%;
+	}
+}

@@ -1,0 +1,63 @@
+@import '../../../css/core.variables.scss';
+.apps-section {
+	border-radius: 0;
+	.section-header {
+		.icon-container {
+			position: relative;
+			.notif-icon {
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				transform: translateY(-50%);
+				font-size: 21px;
+			}
+		}
+		.section-title {
+			margin-left: -10px;
+		}
+		.see-all-btn {
+			position: relative;
+			.see-all {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%);
+				color: $violet-3;
+			}
+		}
+	}
+	.apps-display-container {
+		.app-list {
+			background: #ffbf67;
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
+	.apps-section {
+		padding: 10px;
+		.section-header {
+			.section-title {
+				padding-left: 5px;
+			}
+		}
+	}
+	.see-all-btn {
+		.see-all {
+			left: 40% !important;
+		}
+	}
+	.apps-display-container {
+		.app-list {
+			height: 100px;
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1364px) {
+	.see-all-btn {
+		.see-all {
+			left: 25% !important;
+		}
+	}
+}

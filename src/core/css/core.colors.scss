@@ -1,0 +1,196 @@
+/**
+  Core Customed Class Names for Background, Text Colors
+
+  NOTE  : Refer to core.variables.scss for variable references
+  USAGE : eg. bg-accent-0, bg-hover-accent-0, text-accent-0, text-hover-accent-0
+*/
+@import 'core.functions';
+/**
+  All switchable colors for dark and light mode will be declared here.
+  For adding new color conditions you can refer to the classes declared below.
+*/
+
+// DARK MODE - for backgrounds and texts
+.core-dark-mode {
+	.core-bg-primary {
+		background-color: $primary !important;
+    @media screen and (max-width: $breakpoint-xs-max) {
+      background-color: $secondary !important;
+    }
+	}
+	.core-bg-secondary {
+		background-color: $secondary !important;
+	}
+	.core-bg-accent-0 {
+		background-color: $accent-0;
+		@media screen and (min-width: $breakpoint-sm-max) {
+			background-color: $accent-0 !important;
+		}
+	}
+	.core-text-primary {
+		color: $white;
+	}
+	.core-text-secondary {
+		color: $accent-2;
+	}
+
+  //Index Page
+	.core-index {
+		.core-text-secondary {
+			color: $white;
+		}
+	}
+
+  // LEFT SIDEBAR
+  .core-left-drawer {
+    .core-bg-secondary {
+      @media screen and (max-width: 767px) {
+        background-color: $accent-0 !important;
+      }
+    }
+  }
+
+  // RIGHT SIDEBAR
+  .core-right-drawer {
+    .core-bg-accent-1 {
+      background-color: $accent-1;
+      .core-bg-accent-1 {
+        background-color: $accent-2;
+      }
+    }
+    .core-analog-clock-accent-1 {
+			filter: drop-shadow(5px 5px 3px $accent-1) !important;
+		}
+  }
+
+  // FOOTER
+  .core-footer {
+    .core-bg-white {
+      background-color: $white;
+      @media screen and (min-width: $breakpoint-sm-min) {
+        background-color: rgba(255, 255, 255, .7);;
+      }
+    }
+    .core-text-violet-0 {
+      color: $violet-6;
+    }
+  }
+}
+// LIGHT MODE - for backgrounds and texts
+.core-light-mode {
+	.core-bg-primary {
+		background-color: $offwhite !important;
+	}
+	.core-bg-secondary {
+		background-color: $white !important;
+	}
+	.core-bg-accent-0 {
+		background-color: $white;
+		@media screen and (min-width: $breakpoint-sm-max) {
+			background-color: $white !important;
+		}
+	}
+	.core-text-primary,
+	.core-text-secondary {
+		color: $secondary;
+	}
+
+  // LEFT SIDEBAR
+  .core-left-drawer {
+  .core-text-violet-1 {
+      @media screen and (max-width: 767px) {
+        color: $violet-1;
+      }
+    }
+  }
+
+	// RIGHT SIDEBAR
+	.core-right-drawer {
+		.core-bg-accent-1 {
+			background-color: $white;
+			.core-bg-accent-1 {
+				background-color: $accent-1;
+			}
+		}
+    .core-analog-clock-accent-1 {
+			filter: drop-shadow(5px 5px 3px $accent-2) !important;
+		}
+	}
+
+  // FOOTER
+  .core-footer {
+    .core-bg-white {
+      background-color: $violet-6;
+      @media screen and (min-width: $breakpoint-sm-min) {
+        background-color: rgba(100, 31, 255, .7);
+      }
+    }
+    .core-text-violet-0 {
+      color: $white;
+    }
+  }
+}
+
+// Background accent color
+@for $i from 0 through 3 {
+	.bg-accent-#{$i} {
+		background-color: color(a, $i);
+	}
+}
+
+// Background violet color
+@for $i from 0 through 5 {
+	.bg-violet-#{$i} {
+		background-color: color(v, $i);
+	}
+}
+
+// Background violet hover color
+@for $i from 0 through 3 {
+	.bg-hover-accent-#{$i} {
+		transition: 0.2s ease-out;
+		&:hover {
+			color: $white;
+			background-color: color(a, $i);
+		}
+	}
+}
+
+// Background violet hover color
+@for $i from 0 through 5 {
+	.bg-hover-violet-#{$i} {
+		transition: 0.2s ease-out;
+		&:hover {
+			color: $white !important;
+			background-color: color(v, $i);
+		}
+	}
+}
+
+// Text accent colors
+@for $i from 0 through 3 {
+	.text-accent-#{$i} {
+		color: color(a, $i);
+	}
+	// Text accent hover colors
+	.text-hover-accent-#{$i} {
+		transition: 0.2s ease-out;
+		&:hover {
+			color: color(a, $i);
+		}
+	}
+}
+
+// Text violet colors
+@for $i from 0 through 5 {
+	.text-violet-#{$i} {
+		color: color(v, $i);
+	}
+	// Text violet hover colors
+	.text-hover-violet-#{$i} {
+		transition: 0.2s ease-out;
+		&:hover {
+			color: color(v, $i);
+		}
+	}
+}

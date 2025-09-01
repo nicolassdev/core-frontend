@@ -1,0 +1,12 @@
+// Core Global CSS in SCSS form
+@import "core.variables";
+@import "core.iconfont";
+@import "core.colors";
+@import 'core.source.sans.pro';
+@import 'core.roboto';
+@import "core.texts";
+@import "core.borders";
+@import "core.global";
+
+// Core components
+@import "components/UserCard";

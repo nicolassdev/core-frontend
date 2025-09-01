@@ -1,0 +1,72 @@
+/**
+  Core Customed Borders/ Colors,Radius
+*/
+@import 'core.functions';
+
+.border-radius-50 {
+	border-radius: 50px;
+}
+.border-radius-15 {
+	border-radius: 15px;
+}
+.border-radius-12 {
+	border-radius: 12px;
+}
+.border-radius-10 {
+	border-radius: 10px;
+}
+.border-radius-8 {
+	border-radius: 8px;
+}
+.border-radius-5 {
+	border-radius: 5px;
+}
+// Border accent color
+@for $i from 0 through 3 {
+	.border-accent-#{$i} {
+		border: 1px solid;
+		border-color: color(a, $i);
+	}
+}
+
+// Border violet color
+@for $i from 0 through 5 {
+	.border-violet-#{$i} {
+		border: 1px solid;
+		border-color: color(v, $i);
+	}
+}
+
+// Border size
+.border {
+  &.one {
+    border: 1px solid;
+  }
+  &.two {
+    border: 2px solid;
+  }
+  &.three {
+    border: 3px solid;
+  }
+  &.four {
+    border: 4px solid;
+  }
+  &.five {
+    border: 5px solid;
+  }
+  &.six {
+    border: 6px solid;
+  }
+  &.seven {
+    border: 7px solid;
+  }
+  &.eight {
+    border: 8px solid;
+  }
+  &.nine {
+    border: 9px solid;
+  }
+  &.ten {
+    border: 10px solid;
+  }
+}

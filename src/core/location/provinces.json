@@ -1,0 +1,661 @@
+{
+	"data": [
+		{
+			"code": "130000000",
+			"regionCode" : "130000000",
+			"name": "NCR",
+			"label": "National Capital Region",
+			"value": "National Capital Region",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1300000000"
+		},
+		{
+			"code": "012800000",
+			"label": "Ilocos Norte",
+			"value": "Ilocos Norte",
+			"regionCode": "010000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0102800000"
+		},
+		{
+			"code": "012900000",
+			"label": "Ilocos Sur",
+			"value": "Ilocos Sur",
+			"regionCode": "010000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0102900000"
+		},
+		{
+			"code": "013300000",
+			"label": "La Union",
+			"value": "La Union",
+			"regionCode": "010000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0103300000"
+		},
+		{
+			"code": "015500000",
+			"label": "Pangasinan",
+			"value": "Pangasinan",
+			"regionCode": "010000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0105500000"
+		},
+		{
+			"code": "020900000",
+			"label": "Batanes",
+			"value": "Batanes",
+			"regionCode": "020000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0200900000"
+		},
+		{
+			"code": "021500000",
+			"label": "Cagayan",
+			"value": "Cagayan",
+			"regionCode": "020000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0201500000"
+		},
+		{
+			"code": "023100000",
+			"label": "Isabela",
+			"value": "Isabela",
+			"regionCode": "020000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0203100000"
+		},
+		{
+			"code": "025000000",
+			"label": "Nueva Vizcaya",
+			"value": "Nueva Vizcaya",
+			"regionCode": "020000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0205000000"
+		},
+		{
+			"code": "025700000",
+			"label": "Quirino",
+			"value": "Quirino",
+			"regionCode": "020000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0205700000"
+		},
+		{
+			"code": "030800000",
+			"label": "Bataan",
+			"value": "Bataan",
+			"regionCode": "030000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0300800000"
+		},
+		{
+			"code": "031400000",
+			"label": "Bulacan",
+			"value": "Bulacan",
+			"regionCode": "030000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0301400000"
+		},
+		{
+			"code": "034900000",
+			"label": "Nueva Ecija",
+			"value": "Nueva Ecija",
+			"regionCode": "030000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0304900000"
+		},
+		{
+			"code": "035400000",
+			"label": "Pampanga",
+			"value": "Pampanga",
+			"regionCode": "030000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0305400000"
+		},
+		{
+			"code": "036900000",
+			"label": "Tarlac",
+			"value": "Tarlac",
+			"regionCode": "030000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0306900000"
+		},
+		{
+			"code": "037100000",
+			"label": "Zambales",
+			"value": "Zambales",
+			"regionCode": "030000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0307100000"
+		},
+		{
+			"code": "037700000",
+			"label": "Aurora",
+			"value": "Aurora",
+			"regionCode": "030000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0307700000"
+		},
+		{
+			"code": "041000000",
+			"label": "Batangas",
+			"value": "Batangas",
+			"regionCode": "040000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0401000000"
+		},
+		{
+			"code": "042100000",
+			"label": "Cavite",
+			"value": "Cavite",
+			"regionCode": "040000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0402100000"
+		},
+		{
+			"code": "043400000",
+			"label": "Laguna",
+			"value": "Laguna",
+			"regionCode": "040000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0403400000"
+		},
+		{
+			"code": "045600000",
+			"label": "Quezon",
+			"value": "Quezon",
+			"regionCode": "040000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0405600000"
+		},
+		{
+			"code": "045800000",
+			"label": "Rizal",
+			"value": "Rizal",
+			"regionCode": "040000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0405800000"
+		},
+		{
+			"code": "174000000",
+			"label": "Marinduque",
+			"value": "Marinduque",
+			"regionCode": "170000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1704000000"
+		},
+		{
+			"code": "175100000",
+			"label": "Occidental Mindoro",
+			"value": "Occidental Mindoro",
+			"regionCode": "170000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1705100000"
+		},
+		{
+			"code": "175200000",
+			"label": "Oriental Mindoro",
+			"value": "Oriental Mindoro",
+			"regionCode": "170000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1705200000"
+		},
+		{
+			"code": "175300000",
+			"label": "Palawan",
+			"value": "Palawan",
+			"regionCode": "170000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1705300000"
+		},
+		{
+			"code": "175900000",
+			"label": "Romblon",
+			"value": "Romblon",
+			"regionCode": "170000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1705900000"
+		},
+		{
+			"code": "050500000",
+			"label": "Albay",
+			"value": "Albay",
+			"regionCode": "050000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0500500000"
+		},
+		{
+			"code": "051600000",
+			"label": "Camarines Norte",
+			"value": "Camarines Norte",
+			"regionCode": "050000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0501600000"
+		},
+		{
+			"code": "051700000",
+			"label": "Camarines Sur",
+			"value": "Camarines Sur",
+			"regionCode": "050000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0501700000"
+		},
+		{
+			"code": "052000000",
+			"label": "Catanduanes",
+			"value": "Catanduanes",
+			"regionCode": "050000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0502000000"
+		},
+		{
+			"code": "054100000",
+			"label": "Masbate",
+			"value": "Masbate",
+			"regionCode": "050000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0504100000"
+		},
+		{
+			"code": "056200000",
+			"label": "Sorsogon",
+			"value": "Sorsogon",
+			"regionCode": "050000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "0506200000"
+		},
+		{
+			"code": "060400000",
+			"label": "Aklan",
+			"value": "Aklan",
+			"regionCode": "060000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0600400000"
+		},
+		{
+			"code": "060600000",
+			"label": "Antique",
+			"value": "Antique",
+			"regionCode": "060000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0600600000"
+		},
+		{
+			"code": "061900000",
+			"label": "Capiz",
+			"value": "Capiz",
+			"regionCode": "060000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0601900000"
+		},
+		{
+			"code": "063000000",
+			"label": "Iloilo",
+			"value": "Iloilo",
+			"regionCode": "060000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0603000000"
+		},
+		{
+			"code": "064500000",
+			"label": "Negros Occidental",
+			"value": "Negros Occidental",
+			"regionCode": "060000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0604500000"
+		},
+		{
+			"code": "067900000",
+			"label": "Guimaras",
+			"value": "Guimaras",
+			"regionCode": "060000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0607900000"
+		},
+		{
+			"code": "071200000",
+			"label": "Bohol",
+			"value": "Bohol",
+			"regionCode": "070000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0701200000"
+		},
+		{
+			"code": "072200000",
+			"label": "Cebu",
+			"value": "Cebu",
+			"regionCode": "070000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0702200000"
+		},
+		{
+			"code": "074600000",
+			"label": "Negros Oriental",
+			"value": "Negros Oriental",
+			"regionCode": "070000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0704600000"
+		},
+		{
+			"code": "076100000",
+			"label": "Siquijor",
+			"value": "Siquijor",
+			"regionCode": "070000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0706100000"
+		},
+		{
+			"code": "082600000",
+			"label": "Eastern Samar",
+			"value": "Eastern Samar",
+			"regionCode": "080000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0802600000"
+		},
+		{
+			"code": "083700000",
+			"label": "Leyte",
+			"value": "Leyte",
+			"regionCode": "080000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0803700000"
+		},
+		{
+			"code": "084800000",
+			"label": "Northern Samar",
+			"value": "Northern Samar",
+			"regionCode": "080000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0804800000"
+		},
+		{
+			"code": "086000000",
+			"label": "Samar",
+			"value": "Samar",
+			"regionCode": "080000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0806000000"
+		},
+		{
+			"code": "086400000",
+			"label": "Southern Leyte",
+			"value": "Southern Leyte",
+			"regionCode": "080000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0806400000"
+		},
+		{
+			"code": "087800000",
+			"label": "Biliran",
+			"value": "Biliran",
+			"regionCode": "080000000",
+			"islandGroupCode": "visayas",
+			"psgc10DigitCode": "0807800000"
+		},
+		{
+			"code": "097200000",
+			"label": "Zamboanga Del Norte",
+			"value": "Zamboanga Del Norte",
+			"regionCode": "090000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "0907200000"
+		},
+		{
+			"code": "097300000",
+			"label": "Zamboanga Del Sur",
+			"value": "Zamboanga Del Sur",
+			"regionCode": "090000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "0907300000"
+		},
+		{
+			"code": "098300000",
+			"label": "Zamboanga Sibugay",
+			"value": "Zamboanga Sibugay",
+			"regionCode": "090000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "0908300000"
+		},
+		{
+			"code": "101300000",
+			"label": "Bukidnon",
+			"value": "Bukidnon",
+			"regionCode": "100000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1001300000"
+		},
+		{
+			"code": "101800000",
+			"label": "Camiguin",
+			"value": "Camiguin",
+			"regionCode": "100000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1001800000"
+		},
+		{
+			"code": "103500000",
+			"label": "Lanao Del Norte",
+			"value": "Lanao Del Norte",
+			"regionCode": "100000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1003500000"
+		},
+		{
+			"code": "104200000",
+			"label": "Misamis Occidental",
+			"value": "Misamis Occidental",
+			"regionCode": "100000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1004200000"
+		},
+		{
+			"code": "104300000",
+			"label": "Misamis Oriental",
+			"value": "Misamis Oriental",
+			"regionCode": "100000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1004300000"
+		},
+		{
+			"code": "112300000",
+			"label": "Davao Del Norte",
+			"value": "Davao Del Norte",
+			"regionCode": "110000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1102300000"
+		},
+		{
+			"code": "112400000",
+			"label": "Davao Del Sur",
+			"value": "Davao Del Sur",
+			"regionCode": "110000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1102400000"
+		},
+		{
+			"code": "112500000",
+			"label": "Davao Oriental",
+			"value": "Davao Oriental",
+			"regionCode": "110000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1102500000"
+		},
+		{
+			"code": "118200000",
+			"label": "Davao De Oro",
+			"value": "Davao De Oro",
+			"regionCode": "110000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1108200000"
+		},
+		{
+			"code": "118600000",
+			"label": "Davao Occidental",
+			"value": "Davao Occidental",
+			"regionCode": "110000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1108600000"
+		},
+		{
+			"code": "124700000",
+			"label": "Cotabato",
+			"value": "Cotabato",
+			"regionCode": "120000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1204700000"
+		},
+		{
+			"code": "126300000",
+			"label": "South Cotabato",
+			"value": "South Cotabato",
+			"regionCode": "120000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1206300000"
+		},
+		{
+			"code": "126500000",
+			"label": "Sultan Kudarat",
+			"value": "Sultan Kudarat",
+			"regionCode": "120000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1206500000"
+		},
+		{
+			"code": "128000000",
+			"label": "Sarangani",
+			"value": "Sarangani",
+			"regionCode": "120000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1208000000"
+		},
+		{
+			"code": "140100000",
+			"label": "Abra",
+			"value": "Abra",
+			"regionCode": "140000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1400100000"
+		},
+		{
+			"code": "141100000",
+			"label": "Benguet",
+			"value": "Benguet",
+			"regionCode": "140000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1401100000"
+		},
+		{
+			"code": "142700000",
+			"label": "Ifugao",
+			"value": "Ifugao",
+			"regionCode": "140000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1402700000"
+		},
+		{
+			"code": "143200000",
+			"label": "Kalinga",
+			"value": "Kalinga",
+			"regionCode": "140000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1403200000"
+		},
+		{
+			"code": "144400000",
+			"label": "Mountain Province",
+			"value": "Mountain Province",
+			"regionCode": "140000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1404400000"
+		},
+		{
+			"code": "148100000",
+			"label": "Apayao",
+			"value": "Apayao",
+			"regionCode": "140000000",
+			"islandGroupCode": "luzon",
+			"psgc10DigitCode": "1408100000"
+		},
+		{
+			"code": "160200000",
+			"label": "Agusan Del Norte",
+			"value": "Agusan Del Norte",
+			"regionCode": "160000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1600200000"
+		},
+		{
+			"code": "160300000",
+			"label": "Agusan Del Sur",
+			"value": "Agusan Del Sur",
+			"regionCode": "160000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1600300000"
+		},
+		{
+			"code": "166700000",
+			"label": "Surigao Del Norte",
+			"value": "Surigao Del Norte",
+			"regionCode": "160000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1606700000"
+		},
+		{
+			"code": "166800000",
+			"label": "Surigao Del Sur",
+			"value": "Surigao Del Sur",
+			"regionCode": "160000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1606800000"
+		},
+		{
+			"code": "168500000",
+			"label": "Dinagat Islands",
+			"value": "Dinagat Islands",
+			"regionCode": "160000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1608500000"
+		},
+		{
+			"code": "150700000",
+			"label": "Basilan",
+			"value": "Basilan",
+			"regionCode": "150000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1900700000"
+		},
+		{
+			"code": "153600000",
+			"label": "Lanao Del Sur",
+			"value": "Lanao Del Sur",
+			"regionCode": "150000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1903600000"
+		},
+		{
+			"code": "153800000",
+			"label": "Maguindanao",
+			"value": "Maguindanao",
+			"regionCode": "150000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1903800000"
+		},
+		{
+			"code": "156600000",
+			"label": "Sulu",
+			"value": "Sulu",
+			"regionCode": "150000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1906600000"
+		},
+		{
+			"code": "157000000",
+			"label": "Tawi-Tawi",
+			"value": "Tawi-Tawi",
+			"regionCode": "150000000",
+			"islandGroupCode": "mindanao",
+			"psgc10DigitCode": "1907000000"
+		}
+	]
+}

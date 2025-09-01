@@ -1,0 +1,47 @@
+// Core SCSS (& Sass) Variables
+// --------------------------------------------------
+// All your variables must be declared here. Any variables
+// declared here that matches Quasar's variables will be
+// overridden by the variables declared here.
+
+$primary: #252c3e;
+$secondary: #202633;
+
+$accent-0: #2b3347;
+$accent-1: #333c52;
+$accent-2: #8890a3;
+$accent-3: #a7a7a7;
+$accent-4: #f2f2f2;
+$accent-5: #707070;
+$accent-6: #d1d1d1;
+$accent-7: #d1d1d1;
+
+$violet-0: #6200ea;
+$violet-1: #651fff;
+$violet-2: #7c4dff;
+$violet-3: #b388ff;
+$violet-4: #d6bcfa;
+$violet-5: #e9d8fd;
+$violet-6: #641fff;
+$violet-7: #5100c1;
+$violet-8: #5e1cee;
+
+$white: #ffffff;
+$offwhite: #f5f5f5;
+$red: #f70000;
+$red-1: #f70000;
+$black: #101010;
+$yellow: #ffb100;
+
+// Breakpoints
+$breakpoint-xl-max: 5120px;
+$breakpoint-xl-min: 2000px;
+$breakpoint-sm-max: 1023px;
+$breakpoint-md-min: 1300px;
+$breakpoint-lg-max: 1919px;
+$breakpoint-lg-min: 1500px;
+$breakpoint-sm-min: 768px;
+$breakpoint-xs-max: 600px;
+
+//Fonts
+$roboto: 'Roboto';
