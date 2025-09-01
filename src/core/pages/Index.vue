@@ -1,6 +1,6 @@
 <template>
 	<div class="core-index text-white full-width">
-		<div class="text-h1 text-18 core-text-primary text-bold">Apps Installed</div>
+		<div class="text-h1 text-18 core-text-primary text-bold">System Name</div>
 		<div class="row">
 			<div class="col-6 col-sm-4 col-md-2 q-mb-lg" v-for="(systems, alias) in SystemList" :key="systems">
 				<div class="q-mr-lg">
@@ -11,7 +11,7 @@
 						class="row cursor-pointer border-radius-10 relative-position full-width q-px-md q-py-xl"
 					>
 						<div class="col-5">
-							<q-avatar square>
+							<q-avatar square style="font-size:70px">
 								<q-img src="./../statics/apps/skb-logo.png" size="lg" />
 							</q-avatar>
 						</div>

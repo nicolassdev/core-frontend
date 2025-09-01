@@ -36,7 +36,7 @@
             <div class="desktop-materials col-auto">
               <q-icon
                 @click="setColorMode()"
-                :class="GET_DARK_MODE_STATE ? 'text-amber-7' : 'text-violet-0'"
+                :class="GET_DARK_MODE_STATE ? 'text-blue-6' : 'text-violet-0'"
                 class="text-hover-violet-1 outlined q-pr-md cursor-pointer material-icons"
                 :name="GET_DARK_MODE_STATE ? 'light_mode' : 'dark_mode'"
                 size="sm"

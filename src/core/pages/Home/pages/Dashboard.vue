@@ -5,13 +5,13 @@
 				<div class="row apps-row">
 					<div class="col-12">
 						<div class="row tablet-header q-py-lg q-pr-lg q-mr-md q-mb-sm" v-if="!$q.screen.gt.md">
-							<div class="col-8 text-18 core-text-primary text-bold">Apps Installed</div>
+							<div class="col-8 text-18 core-text-primary text-bold">System Name</div>
 							<div class="col-2 text-11 core-text-primary text-right text-bold">Version 20.2.1</div>
 							<div class="col-2 text-14 text-right text-violet-2 text-bold">New Updates!</div>
 						</div>
 						<div class="row items-center">
 							<div class="col-6">
-								<div class="header text-h1 text-18 core-text-primary text-bold">Apps Installed</div>
+								<div class="header text-h1 text-18 core-text-primary text-bold">System Name</div>
 							</div>
 							<div class="col-6 text-right">
 								<div class="see-all" v-if="$q.screen.lt.md">

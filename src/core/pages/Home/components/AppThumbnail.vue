@@ -8,7 +8,7 @@
       class="row system-button cursor-pointer border-radius-10 relative-position full-width q-px-md q-py-xl"
     >
       <div class="col-12 col-sm-5">
-        <q-avatar square>
+        <q-avatar square size="70px">
           <q-img src="./../../../statics/apps/skb-logo.png" size="lg" />
         </q-avatar>
       </div>
