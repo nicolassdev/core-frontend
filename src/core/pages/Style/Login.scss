@@ -16,11 +16,21 @@
 		border: 1px solid $primary;
 	}
 	.core-quasar {
-		background: url('../assets/core-quasar.svg');
+		// background: url('../assets/core-quasar.svg');
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 35vw;
 		width: 50%;
 	}
+}
+
+.background-skb {
+	background: url('../assets/skb-logo.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 550px;
+	height: 100vh;
+	background-color: #202020;
 }

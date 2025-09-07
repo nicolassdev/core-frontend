@@ -1,117 +1,138 @@
 <template>
-	<div class="core-login">
-		<div class="row full-height full-width justify-center items-center">
-			<div class="core-quasar full-height flex justify-center items-center">
-				<div v-if="!state.isLoading" class="col-3 relative-position">
-					<transition
-						appear
-						enter-active-class="animated zoomIn"
-						leave-active-class="animated zoomOut"
-						:duration="4000"
+	<div class="core-login background-skb">
+		<div class="row full-height full-width">
+			<!-- LEFT SIDE - TITLE -->
+			<div class="col-6 flex flex-center text-white">
+				<div class="q-pa-xl text-center">
+					<h1 class="text-h3 text-weight-bold">
+						SANGGUNIANG KABATAAN <br />
+						NG BURAGUIS
+					</h1>
+				</div>
+			</div>
+
+			<!-- RIGHT SIDE - LOGIN FORM -->
+			<div class="col-6 flex flex-center">
+				<div class="core-quasar full-height flex justify-center items-center">
+					<div
+						v-if="!state.isLoading"
+						class="col-10 relative-position q-pa-xl q-mt-xl text-white"
+						style="
+							border: 2px solid #00b4ff;
+							border-radius: 12px;
+							box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+							background-color: #202020;
+						"
 					>
-						<div
-							v-if="error"
-							class="bg-red text-white text-16 q-px-md q-py-sm q-mb-sm rounded-borders text-center"
+						<transition
+							appear
+							enter-active-class="animated zoomIn"
+							leave-active-class="animated zoomOut"
+							:duration="4000"
 						>
-							<q-icon name="close" class="q-pr-sm" size="sm" />
-							{{ errorMessage }}
-						</div>
-					</transition>
-					<div class="row justify-center items-center">
-						<q-form class="" @keyup.enter="loginUser">
-							<div class="col-12 q-pt-md text-white">
-								<q-input
-									dense
-									borderless
-									:input-class="usernameInput"
-									v-model="form.username"
-									@update:model-value="usernameBehavior"
-									placeholder="Username"
-									class="q-pb-none q-pb-sm q-mb-md"
-									:class="!error ? 'border-bottom-white' : 'border-bottom-red'"
-								>
-									<template v-slot:prepend>
-										<q-icon :class="userNameIcon" class="q-px-md" name="person" />
-									</template>
-								</q-input>
-
-								<q-input
-									dense
-									borderless
-									:input-class="passwordInput"
-									:type="isPwd ? 'password' : 'text'"
-									v-model="form.password"
-									@update:model-value="passwordBehavior"
-									placeholder="Password"
-									class="q-pb-none q-pb-sm"
-									:class="!error ? 'border-bottom-white' : 'border-bottom-red'"
-								>
-									<template v-slot:prepend>
-										<q-icon :class="passwordIcon" class="q-px-md" name="lock" />
-									</template>
-									<template v-slot:append>
-										<q-icon
-											:name="isPwd ? 'visibility_off' : 'visibility'"
-											class="cursor-pointer text-accent-3"
-											@click="isPwd = !isPwd"
-										/>
-									</template>
-								</q-input>
+							<div
+								v-if="error"
+								class="bg-red text-white text-16 q-px-md q-py-sm q-mb-sm rounded-borders text-center"
+							>
+								<q-icon name="close" class="q-pr-sm" size="sm" />
+								{{ errorMessage }}
 							</div>
+						</transition>
 
-              <div class="col-12 q-px-lg q-pt-xl">
-                <div>
-                  <q-btn
-                    rounded
-                    flat
-                    dense
-                    no-caps
-                    :class="
-                      disabledBtn ? 'bg-accent-3 text-black' : 'bg-violet-0 text-white'
-                    "
-                    class="full-width"
-                    label="Log In"
-                    size="18px"
-                    @click="loginUser"
-                    :disable="disabledBtn"
-                    :loading="btnLoadingState"
-                  />
-                </div>
-                <!-- <div class="column no-wrap q-py-md text-center">
-                  <a
-                    class="text-white cursor-pointer"
-                    @click="$router.push('core-forgot-password')"
-                  >
-                    Forgot Password?
-                  </a>
-                  <div class="row no-wrap items-center self-center q-mt-sm">
-                    <label class="text-grey-8 q-mr-xs">Don't have an account?</label>
-                    <a
-                      class="text-white cursor-pointer"
-                      @click="$router.push('core-registration')"
-                    >
-                      Register
-                    </a>
-                  </div>
-                </div> -->
-              </div>
-            </q-form>
-          </div>
-        </div>
+						<div class="row justify-center items-center">
+							<q-form @keyup.enter="loginUser">
+								<div class="col-12 q-pt-md text-white">
+									<q-input
+										dense
+										borderless
+										:input-class="usernameInput"
+										v-model="form.username"
+										@update:model-value="usernameBehavior"
+										placeholder="Username"
+										class="q-pb-none q-pb-sm q-mb-md"
+										:class="!error ? 'border-bottom-white' : 'border-bottom-red'"
+									>
+										<template v-slot:prepend>
+											<q-icon :class="userNameIcon" class="q-px-md" name="person" />
+										</template>
+									</q-input>
 
-				<div v-else class="col-12 full-width text-center text-white">
-					<div class="q-mb-xl">
-						<h1 class="text-60 text-weight-medium q-my-none">Welcome Back!</h1>
-						<p class="text-28">We're just loading data for you.</p>
+									<q-input
+										dense
+										borderless
+										:input-class="passwordInput"
+										:type="isPwd ? 'password' : 'text'"
+										v-model="form.password"
+										@update:model-value="passwordBehavior"
+										placeholder="Password"
+										class="q-pb-none q-pb-sm"
+										:class="!error ? 'border-bottom-white' : 'border-bottom-red'"
+									>
+										<template v-slot:prepend>
+											<q-icon :class="passwordIcon" class="q-px-md" name="lock" />
+										</template>
+										<template v-slot:append>
+											<q-icon
+												:name="isPwd ? 'visibility_off' : 'visibility'"
+												class="cursor-pointer text-accent-3"
+												@click="isPwd = !isPwd"
+											/>
+										</template>
+									</q-input>
+								</div>
+
+								<div class="col-12 q-px-lg q-pt-xl">
+									<div>
+										<q-btn
+											rounded
+											flat
+											dense
+											no-caps
+											:class="disabledBtn ? 'bg-accent-3 text-black' : 'bg-violet-0 text-white'"
+											class="full-width"
+											label="Log In"
+											size="18px"
+											@click="loginUser"
+											:disable="disabledBtn"
+											:loading="btnLoadingState"
+										/>
+									</div>
+									<!-- <div class="column no-wrap q-py-md text-center">
+										<a
+											class="text-white cursor-pointer"
+											@click="$router.push('core-forgot-password')"
+										>
+											Forgot Password?
+										</a>
+										<div class="row no-wrap items-center self-center q-mt-sm">
+											<label class="text-grey-8 q-mr-xs">Don't have an account?</label>
+											<a
+												class="text-white cursor-pointer"
+												@click="$router.push('core-registration')"
+											>
+												Register
+											</a>
+										</div>
+									</div> -->
+								</div>
+							</q-form>
+						</div>
 					</div>
-					<div>
-						<q-linear-progress
-							rounded
-							size="7px"
-							:value="progress"
-							class="bg-white border-primary text-violet-0"
-						/>
-						<p class="text-22 text-violet-4 q-mt-sm text-bold">Updating the dashboard...</p>
+
+					<div v-else class="col-12 full-width text-center text-white">
+						<div class="q-mb-xl">
+							<h1 class="text-60 text-weight-medium q-my-none">Welcome Back!</h1>
+							<p class="text-28">We're just loading data for you.</p>
+						</div>
+						<div>
+							<q-linear-progress
+								rounded
+								size="7px"
+								:value="progress"
+								class="bg-white border-primary text-violet-0"
+							/>
+							<p class="text-22 text-violet-4 q-mt-sm text-bold">Updating the dashboard...</p>
+						</div>
 					</div>
 				</div>
 			</div>
